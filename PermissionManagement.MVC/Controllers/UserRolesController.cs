@@ -16,7 +16,10 @@ public class UserRolesController : Controller
     private readonly UserManager<IdentityUser> _userManager;
     private readonly RoleManager<IdentityRole> _roleManager;
 
-    public UserRolesController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager, RoleManager<IdentityRole> roleManager)
+    public UserRolesController(
+        UserManager<IdentityUser> userManager, 
+        SignInManager<IdentityUser> signInManager, 
+        RoleManager<IdentityRole> roleManager)
     {
         _userManager = userManager;
         _signInManager = signInManager;
